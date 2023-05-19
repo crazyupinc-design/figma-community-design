@@ -1,0 +1,215 @@
+.furnitureForYou {
+  margin: 0;
+}
+.discoverTheBestTxt {
+  line-break: anywhere;
+  width: 100%;
+}
+.discoverTheBest {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 100;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  width: 1420px;
+}
+.titleSectionIcon {
+  position: relative;
+  width: 552px;
+  height: 14.61px;
+}
+.bannerTitle {
+  align-self: stretch;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.explore,
+.explore:hover {
+  font-family: var(--font-noto-sans-kr);
+}
+.explore {
+  position: relative;
+  font-size: var(--subtitle-subtitle-2-size);
+  line-height: 100%;
+  font-weight: 100;
+  color: var(--color-white);
+  text-align: center;
+}
+.explore:hover {
+  font-weight: 700;
+}
+.bannerButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xl);
+  background-color: var(--color-orange-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bannerButton:hover {
+  background-color: var(--color-orange-200);
+}
+.banner {
+  align-self: stretch;
+  height: 385px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-21xl);
+}
+.pricePopupChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.noisoSofa {
+  top: 8.73%;
+  font-weight: 100;
+}
+.noisoSofa,
+.rp4499000,
+.woodenTableWith {
+  position: absolute;
+  left: 8.23%;
+  line-height: 120%;
+}
+.rp4499000 {
+  top: 44.44%;
+  font-size: var(--font-size-3xl);
+  font-weight: 100;
+}
+.woodenTableWith {
+  width: 83.95%;
+  top: 24.6%;
+  font-size: var(--body-body-2-size);
+  display: inline-block;
+}
+.viewProduct {
+  position: relative;
+  line-height: 120%;
+  font-weight: 100;
+}
+.viewProductWrapper {
+  position: absolute;
+  height: 20.24%;
+  width: 83.95%;
+  top: 65.67%;
+  right: 7.82%;
+  bottom: 14.09%;
+  left: 8.23%;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.pricePopup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray);
+  width: 243px;
+  height: 252px;
+  display: none;
+}
+.dotIcon,
+.pot,
+.table {
+  position: absolute;
+  top: 260px;
+  left: 109px;
+  width: 24px;
+  height: 24px;
+}
+.pot,
+.table {
+  top: 98.75px;
+  left: 1187.18px;
+  width: 252.82px;
+  height: 290.25px;
+  overflow: hidden;
+}
+.table {
+  left: 750.2px;
+}
+.cabinet,
+.pricePopup2,
+.sofa {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pricePopup2 {
+  text-decoration: none;
+  background-color: var(--color-gray);
+  width: 243px;
+  height: 252px;
+  display: none;
+  color: inherit;
+}
+.cabinet,
+.sofa {
+  width: 265.99px;
+  height: 351px;
+  overflow: hidden;
+}
+.sofa {
+  top: 32px;
+  left: 323.95px;
+  width: 335.99px;
+  height: 331px;
+}
+.bannerImages {
+  align-self: stretch;
+  position: relative;
+  height: 389px;
+  display: none;
+  text-align: left;
+  font-size: var(--font-size-xl);
+}
+.header {
+  align-self: stretch;
+  height: 960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url(/public/header@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: var(--font-size-45xl);
+  color: var(--color-white);
+  font-family: var(--font-noto-sans-kr);
+}
+@media screen and (max-width: 600px) {
+  .discoverTheBest {
+    font-size: var(--font-size-21xl);
+  }
+}

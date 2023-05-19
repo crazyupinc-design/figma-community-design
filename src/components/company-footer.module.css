@@ -1,0 +1,25 @@
+.footer {
+  align-self: stretch;
+  background-color: var(--color-seagreen);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-101xl);
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding-left: var(--padding-41xl);
+    padding-right: var(--padding-41xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    gap: var(--gap-11xl);
+    padding-left: var(--padding-base);
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}

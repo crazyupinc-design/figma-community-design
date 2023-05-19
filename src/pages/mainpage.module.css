@@ -1,0 +1,195 @@
+.imageIcon {
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  height: 425px;
+  object-fit: cover;
+}
+.simpleBedFor {
+  margin-block-start: 0;
+  margin-block-end: 14px;
+}
+.weekend {
+  margin: 0;
+}
+.bannerTitle {
+  align-self: stretch;
+  position: relative;
+  line-height: 100%;
+  font-weight: 100;
+}
+.enjoyYourWeekends {
+  margin-block-start: 0;
+  margin-block-end: 9px;
+}
+.bannerContent {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 120%;
+  color: #686767;
+  display: inline-block;
+  width: 304px;
+}
+.exploreAllProducts {
+  position: relative;
+  font-size: var(--subtitle-subtitle-2-size);
+  line-height: 100%;
+  font-weight: 100;
+  font-family: var(--font-noto-sans-kr);
+  color: var(--color-white);
+  text-align: center;
+}
+.exploreAllProducts:hover {
+  font-weight: 700;
+  font-family: var(--font-noto-sans-kr);
+}
+.bedCategoryLandingButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xl);
+  background-color: var(--color-orange-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bedCategoryLandingButton:hover,
+.discountCategoryLandingButt:hover {
+  background-color: var(--color-orange-200);
+}
+.bannerRightSection,
+.bedCategoryBanner {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+}
+.bannerRightSection {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 49px;
+}
+.bedCategoryBanner {
+  flex-direction: row;
+  padding: 100px var(--padding-101xl);
+  align-items: center;
+  gap: 63px;
+  text-align: left;
+  font-size: var(--font-size-19xl);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans-kr);
+}
+.background {
+  position: absolute;
+  margin: 0 !important;
+  width: 100%;
+  top: 218.39px;
+  right: 0;
+  left: 0;
+  background-color: var(--color-seagreen);
+  height: 218px;
+  z-index: 0;
+}
+.getDiscountUp {
+  align-self: stretch;
+  position: relative;
+  line-height: 120%;
+  font-weight: 100;
+}
+.discountCategoryLandingButt {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xl);
+  background-color: var(--color-orange-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.titleButton {
+  align-self: stretch;
+  padding: 0 var(--padding-21xl);
+  align-items: flex-start;
+  gap: 83px;
+}
+.bottomBanner,
+.contentSection,
+.mainpage,
+.titleButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contentSection {
+  align-self: stretch;
+  border-radius: var(--br-5xl);
+  height: 436px;
+  padding: 73px 0 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  background-image: url(/public/contentsection@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 1;
+}
+.bottomBanner,
+.mainpage {
+  position: relative;
+  align-items: center;
+}
+.bottomBanner {
+  align-self: stretch;
+  padding: 0 var(--padding-101xl);
+}
+.mainpage {
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-23xl);
+  color: var(--color-white);
+  font-family: var(--font-noto-sans-kr);
+}
+@media screen and (max-width: 1200px) {
+  .bannerRightSection,
+  .imageIcon {
+    flex: unset;
+    align-self: stretch;
+  }
+  .bedCategoryBanner {
+    flex-direction: column;
+  }
+  .bedCategoryBanner,
+  .bottomBanner {
+    padding-left: var(--padding-41xl);
+    padding-right: var(--padding-41xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bannerTitle {
+    font-size: var(--font-size-12xl);
+  }
+  .bedCategoryBanner {
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+    box-sizing: border-box;
+  }
+  .getDiscountUp {
+    font-size: var(--font-size-12xl);
+  }
+  .bottomBanner {
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 350px) {
+  .bannerTitle,
+  .getDiscountUp {
+    font-size: var(--font-size-9xl);
+  }
+}

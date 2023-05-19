@@ -1,0 +1,26 @@
+.featuredParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.productsListTitle {
+  align-self: stretch;
+  position: relative;
+  height: 49px;
+}
+.cabinets1Row {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding-116xl);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-11xl);
+}
+@media screen and (max-width: 600px) {
+  .cabinets1Row {
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+    box-sizing: border-box;
+  }
+}

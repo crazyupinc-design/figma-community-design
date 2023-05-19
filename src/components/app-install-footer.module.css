@@ -1,0 +1,158 @@
+.company1 {
+  align-self: stretch;
+  position: relative;
+  line-height: 28px;
+  font-weight: 500;
+}
+.aboutUs,
+.blog,
+.careers,
+.contactUs {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  width: 79px;
+}
+.blog,
+.careers,
+.contactUs {
+  width: 61px;
+}
+.careers,
+.contactUs {
+  width: 84px;
+}
+.contactUs {
+  width: 100px;
+}
+.col1,
+.company,
+.listItems {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.listItems {
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  font-size: var(--body-body-2-size);
+  color: var(--text-gray-200);
+}
+.col1,
+.company {
+  flex: 1;
+}
+.company {
+  flex-direction: column;
+  gap: var(--gap-5xl);
+}
+.col1 {
+  overflow: hidden;
+  flex-direction: row;
+}
+.communityGuidelines,
+.helpCenter,
+.safetyCenter {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  width: 108px;
+}
+.communityGuidelines,
+.safetyCenter {
+  width: 124px;
+}
+.communityGuidelines {
+  width: 156px;
+}
+.col2,
+.containerOne,
+.support {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.support {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-5xl);
+}
+.col2,
+.containerOne {
+  flex: 1;
+}
+.col2 {
+  overflow: hidden;
+  flex-direction: column;
+}
+.containerOne {
+  flex-direction: row;
+  gap: var(--gap-11xl);
+}
+.privacyPolicy,
+.termsOfService {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  width: 130px;
+}
+.termsOfService {
+  width: 141px;
+}
+.downloadBadgeAppstoreIcon {
+  position: relative;
+  width: 137.5px;
+  height: 48px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.autoAddedFrame {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-3xs);
+}
+.autoAddedFrame,
+.badges {
+  height: 106px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.badges,
+.footerLinks,
+.installApp {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.installApp {
+  height: 158px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.footerLinks {
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-11xl);
+  text-align: left;
+  font-size: var(--subtitle-subtitle-2-size);
+  color: var(--text-gray-100);
+  font-family: var(--subtitle-subtitle-2);
+}
+@media screen and (max-width: 800px) {
+  .containerOne {
+    flex: unset;
+    align-self: stretch;
+  }
+  .footerLinks {
+    flex-direction: column;
+    gap: var(--gap-11xl);
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

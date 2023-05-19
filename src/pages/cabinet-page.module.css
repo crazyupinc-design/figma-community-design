@@ -1,0 +1,75 @@
+.cabinetInStylishDisguise {
+  position: relative;
+  line-height: 120%;
+  font-weight: 100;
+}
+.banner,
+.bannerSection {
+  align-self: stretch;
+  justify-content: center;
+}
+.banner {
+  border-radius: var(--br-5xl);
+  height: 393px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url(/public/banner@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.banner:hover {
+  cursor: grab;
+}
+.bannerSection {
+  height: 545px;
+  padding: 96px var(--padding-116xl) 56px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-23xl);
+  color: var(--color-white);
+  font-family: var(--font-noto-sans-kr);
+}
+.bannerSection,
+.cabinetPage,
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products {
+  align-self: stretch;
+  padding: 0 0 220px;
+  justify-content: center;
+  gap: 110px;
+}
+.cabinetPage {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 1200px) {
+  .bannerSection {
+    padding-left: var(--padding-41xl);
+    padding-right: var(--padding-41xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cabinetInStylishDisguise {
+    font-size: var(--font-size-12xl);
+  }
+  .bannerSection {
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 350px) {
+  .cabinetInStylishDisguise {
+    font-size: var(--font-size-9xl);
+  }
+}
