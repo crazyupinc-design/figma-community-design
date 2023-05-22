@@ -1,5 +1,6 @@
-import { FunctionComponent, useMemo } from "react";
+import { FunctionComponent, useMemo, useCallback } from "react";
 import CSS, { Property } from "csstype";
+import { useNavigate } from "react-router-dom";
 import styles from "./header.module.css";
 
 type HeaderType = {
@@ -51,9 +52,15 @@ const Header: FunctionComponent<HeaderType> = ({
     };
   }, [hambugerMenuColor]);
 
+  const navigate = useNavigate();
+
+  const onLogoClick = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
+
   return (
     <div className={styles.headerNavigation}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={onLogoClick}>
         <span style={inteStyle}>Inte</span>
         <span className={styles.rio}>rio.</span>
       </div>
@@ -71,8 +78,12 @@ const Header: FunctionComponent<HeaderType> = ({
           <div className={styles.categories} style={propertyStyle}>
             Property
           </div>
+          <button className={styles.hambugerMenu}>
+            <img className={styles.vectorIcon} alt="" src="/vector32.svg" />
+            <img className={styles.vectorIcon1} alt="" src="/vector33.svg" />
+            <img className={styles.vectorIcon2} alt="" src="/vector33.svg" />
+          </button>
         </a>
-        <img className={styles.hambugerMenuIcon} alt="" src={productIds} />
       </div>
     </div>
   );

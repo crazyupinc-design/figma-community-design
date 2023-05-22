@@ -101,7 +101,23 @@
 .termsOfService {
   width: 141px;
 }
-.downloadBadgeAppstoreIcon {
+.groupIcon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.downloadBadgeAppstore {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
   position: relative;
   width: 137.5px;
   height: 48px;

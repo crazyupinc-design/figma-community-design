@@ -1,3 +1,11 @@
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .imageIcon {
   flex: 1;
   position: relative;
@@ -133,7 +141,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  opacity: 1;
   z-index: 1;
+}
+.contentSection.animate {
+  animation: 1s ease 0s 1 normal forwards scale-up;
 }
 .bottomBanner,
 .mainpage {
@@ -145,7 +157,6 @@
   padding: 0 var(--padding-101xl);
 }
 .mainpage {
-  background-color: var(--color-white);
   width: 100%;
   overflow: hidden;
   text-align: left;

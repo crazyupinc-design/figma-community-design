@@ -1,11 +1,40 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect } from "react";
 import Header from "./header";
 import styles from "./discover-container.module.css";
 const DiscoverContainer: FunctionComponent = () => {
+  useEffect(() => {
+    const scrollAnimElements = document.querySelectorAll(
+      "[data-animate-on-scroll]"
+    );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            const targetElement = entry.target;
+            targetElement.classList.add(styles.animate);
+            observer.unobserve(targetElement);
+          }
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    for (let i = 0; i < scrollAnimElements.length; i++) {
+      observer.observe(scrollAnimElements[i]);
+    }
+
+    return () => {
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.unobserve(scrollAnimElements[i]);
+      }
+    };
+  }, []);
+
   return (
-    <div className={styles.header}>
+    <article className={styles.header} data-animate-on-scroll>
       <Header
-        productIds="/hambugermenu1.svg"
         rioColor="#fff"
         furnitureColor="#fff"
         interiorDesignColor="#fff"
@@ -104,7 +133,7 @@ const DiscoverContainer: FunctionComponent = () => {
           <img className={styles.dotIcon} alt="" src="/dot3.svg" />
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

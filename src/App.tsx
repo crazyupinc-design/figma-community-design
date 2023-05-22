@@ -4,8 +4,8 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import CabinetPage from "./pages/cabinet-page";
 import Mainpage from "./pages/mainpage";
+import CabinetPage from "./pages/cabinet-page";
 import { useEffect } from "react";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/mainpage":
+      case "/cabinetpage":
         title = "";
         metaDescription = "";
         break;
@@ -50,8 +50,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<CabinetPage />} />
-      <Route path="/mainpage" element={<Mainpage />} />
+      <Route path="/" element={<Mainpage />} />
+      <Route path="/cabinetpage" element={<CabinetPage />} />
     </Routes>
   );
 }

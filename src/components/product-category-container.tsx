@@ -1,10 +1,42 @@
-import { FunctionComponent, useCallback } from "react";
+import { FunctionComponent, useCallback, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import ContainerCabinet from "./container-cabinet";
 import styles from "./product-category-container.module.css";
 const ProductCategoryContainer: FunctionComponent = () => {
-  const onCol3Click = useCallback(() => {
-    // Please sync "cabinet-page-original" to the project
+  const navigate = useNavigate();
+  useEffect(() => {
+    const scrollAnimElements = document.querySelectorAll(
+      "[data-animate-on-scroll]"
+    );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            const targetElement = entry.target;
+            targetElement.classList.add(styles.animate);
+            observer.unobserve(targetElement);
+          }
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    for (let i = 0; i < scrollAnimElements.length; i++) {
+      observer.observe(scrollAnimElements[i]);
+    }
+
+    return () => {
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.unobserve(scrollAnimElements[i]);
+      }
+    };
   }, []);
+
+  const onCard2Click = useCallback(() => {
+    navigate("/cabinetpage");
+  }, [navigate]);
 
   return (
     <div className={styles.productsCategory}>
@@ -14,18 +46,18 @@ const ProductCategoryContainer: FunctionComponent = () => {
             <h2 className={styles.shopPopularCategories}>
               Shop Popular Categories
             </h2>
-            <img className={styles.vectorIcon} alt="" src="/vector.svg" />
+            <img className={styles.vectorIcon} alt="" src="/vector1.svg" />
           </div>
           <div className={styles.seeAllButton}>
             <div className={styles.seeAll}>See All</div>
           </div>
         </div>
-        <article className={styles.productsCards}>
-          <article className={styles.col3Parent}>
-            <div className={styles.col3}>
-              <div className={styles.tableCard}>
+        <article className={styles.productsCards} data-animate-on-scroll>
+          <article className={styles.card12}>
+            <div className={styles.card1}>
+              <div className={styles.chairCard}>
                 <div className={styles.table}>Chair</div>
-                <div className={styles.furnitureWrapper}>
+                <div className={styles.col}>
                   <img
                     className={styles.furnitureIcon}
                     alt=""
@@ -34,27 +66,33 @@ const ProductCategoryContainer: FunctionComponent = () => {
                 </div>
               </div>
             </div>
-            <ContainerCabinet
-              table="Cabinet"
-              furniture="/furniture1@2x.png"
-              onCol3Click={onCol3Click}
-            />
+            <button className={styles.card2} onClick={onCard2Click}>
+              <div className={styles.chairCard}>
+                <div className={styles.table1}>Cabinet</div>
+                <div className={styles.col}>
+                  <img
+                    className={styles.furnitureIcon1}
+                    alt=""
+                    src="/furniture1@2x.png"
+                  />
+                </div>
+              </div>
+            </button>
           </article>
-          <article className={styles.col3Group}>
-            <ContainerCabinet
-              table="Table"
-              furniture="/furniture2@2x.png"
-              propCursor="unset"
-              propWidth="268px"
-              propHeight="268px"
-            />
-            <ContainerCabinet
-              table="Lamp"
-              furniture="/furniture3@2x.png"
-              propCursor="unset"
-              propWidth="225px"
-              propHeight="225px"
-            />
+          <article className={styles.card34}>
+            <ContainerCabinet table="Table" />
+            <button className={styles.card2}>
+              <div className={styles.chairCard}>
+                <div className={styles.table1}>Lamp</div>
+                <div className={styles.col}>
+                  <img
+                    className={styles.furnitureIcon2}
+                    alt=""
+                    src="/furniture3@2x.png"
+                  />
+                </div>
+              </div>
+            </button>
           </article>
         </article>
       </article>

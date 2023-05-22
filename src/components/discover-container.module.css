@@ -1,3 +1,13 @@
+@keyframes tilt-in-top-1 {
+  0% {
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
 .furnitureForYou {
   margin: 0;
 }
@@ -197,16 +207,20 @@
   height: 960px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   background-image: url(/public/header@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  opacity: 0;
   text-align: center;
   font-size: var(--font-size-45xl);
   color: var(--color-white);
   font-family: var(--font-noto-sans-kr);
+}
+.header.animate {
+  animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
 }
 @media screen and (max-width: 600px) {
   .discoverTheBest {

@@ -6,14 +6,14 @@
 .banner,
 .bannerSection {
   align-self: stretch;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 .banner {
   border-radius: var(--br-5xl);
   height: 393px;
-  display: flex;
   flex-direction: row;
-  align-items: center;
   background-image: url(/public/banner@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,6 +24,7 @@
 }
 .bannerSection {
   height: 545px;
+  flex-direction: column;
   padding: 96px var(--padding-116xl) 56px;
   box-sizing: border-box;
   text-align: center;
@@ -31,8 +32,135 @@
   color: var(--color-white);
   font-family: var(--font-noto-sans-kr);
 }
-.bannerSection,
+.featuredParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.productsListTitle {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  align-self: stretch;
+  position: relative;
+  height: 49px;
+  display: none;
+}
+.imageIcon {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+}
+.name {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  line-height: 120%;
+  font-weight: 100;
+  color: var(--color-black);
+  text-align: left;
+}
+.name,
+.name:hover,
+.price,
+.size {
+  font-family: var(--font-noto-sans-kr);
+}
+.name:hover {
+  font-weight: 700;
+}
+.price,
+.size {
+  position: relative;
+  line-height: 120%;
+  text-align: left;
+}
+.size {
+  align-self: stretch;
+  font-size: var(--font-size-mini);
+  color: var(--color-dimgray-100);
+}
+.price {
+  font-size: var(--font-size-3xl);
+  font-weight: 100;
+  color: var(--color-black);
+}
+.cabinetCard1,
+.cabinetDetail {
+  display: flex;
+  flex-direction: column;
+}
+.cabinetDetail {
+  width: 270px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+}
+.cabinetCard1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-mid);
+}
+.cabinetCard1:hover {
+  cursor: grab;
+}
+.name1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  line-height: 120%;
+  font-weight: 100;
+  font-family: var(--font-noto-sans-kr);
+  color: var(--color-black);
+  text-align: left;
+}
+.col1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-11xl);
+}
+.imageIcon2 {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+}
+.cabinetCard4 {
+  cursor: grab;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-mid);
+}
+.cabinets1Row,
+.container {
+  align-self: stretch;
+  justify-content: center;
+  gap: var(--gap-11xl);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cabinets1Row {
+  padding: 0 var(--padding-116xl);
+}
 .cabinetPage,
+.cabinets1Row,
 .products {
   display: flex;
   flex-direction: column;
@@ -57,12 +185,50 @@
     padding-right: var(--padding-41xl);
     box-sizing: border-box;
   }
+  .col1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .container {
+    flex-direction: column;
+    gap: var(--gap-11xl);
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    gap: var(--gap-11xl);
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 600px) {
   .cabinetInStylishDisguise {
     font-size: var(--font-size-12xl);
   }
   .bannerSection {
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+    box-sizing: border-box;
+  }
+  .cabinetCard1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .col1 {
+    flex-direction: column;
+  }
+  .cabinetCard4 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .container {
+    gap: var(--gap-11xl);
+    align-items: center;
+    justify-content: center;
+  }
+  .cabinets1Row {
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
     box-sizing: border-box;

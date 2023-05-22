@@ -8,6 +8,7 @@
   display: inline-block;
   width: 62px;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .categories:hover,
 .interiorDesign:hover,
@@ -26,31 +27,55 @@
   width: 125px;
   flex-shrink: 0;
 }
-.navigationLink {
-  text-decoration: none;
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-9xl);
-  color: inherit;
+.vectorIcon,
+.vectorIcon1,
+.vectorIcon2 {
+  position: absolute;
+  width: 75%;
+  top: 50%;
+  right: 12.5%;
+  left: 12.5%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 0;
 }
-.hambugerMenuIcon {
+.vectorIcon1,
+.vectorIcon2 {
+  top: 25%;
+}
+.vectorIcon2 {
+  top: 75%;
+}
+.hambugerMenu {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
   position: relative;
   width: 26px;
   height: 26px;
   overflow: hidden;
   flex-shrink: 0;
+  display: none;
+}
+.navigationLink,
+.navigationMenu {
+  display: flex;
+  justify-content: flex-start;
+}
+.navigationLink {
+  text-decoration: none;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-9xl);
+  color: inherit;
 }
 .navigationMenu {
   width: 486px;
   height: 26px;
-  display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: flex-start;
-  gap: var(--gap-21xl);
   font-size: var(--font-size-base);
 }
 .headerNavigation {
@@ -70,16 +95,16 @@
   font-family: var(--font-noto-sans-kr);
 }
 @media screen and (max-width: 1200px) {
-  .hambugerMenuIcon {
+  .hambugerMenu {
     display: none;
   }
 }
 @media screen and (max-width: 800px) {
+  .hambugerMenu {
+    display: flex;
+  }
   .navigationLink {
     display: none;
-  }
-  .hambugerMenuIcon {
-    display: flex;
   }
   .headerNavigation {
     padding-left: var(--padding-21xl);

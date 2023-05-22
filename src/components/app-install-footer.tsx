@@ -54,16 +54,12 @@ const AppInstallFooter: FunctionComponent<AppInstallFooterType> = ({
             <div className={styles.company1}>Install App</div>
             <div className={styles.badges}>
               <div className={styles.autoAddedFrame}>
-                <img
-                  className={styles.downloadBadgeAppstoreIcon}
-                  alt=""
-                  src={downloadBadgeAppstore}
-                />
-                <img
-                  className={styles.downloadBadgeAppstoreIcon}
-                  alt=""
-                  src={downloadBadgeGoogleplay}
-                />
+                <button className={styles.downloadBadgeAppstore}>
+                  <img className={styles.groupIcon} alt="" src="/group3.svg" />
+                </button>
+                <button className={styles.downloadBadgeAppstore}>
+                  <img className={styles.groupIcon} alt="" src="/layer-2.svg" />
+                </button>
               </div>
             </div>
           </div>

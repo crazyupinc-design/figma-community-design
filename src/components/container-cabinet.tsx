@@ -29,25 +29,17 @@ const ContainerCabinet: FunctionComponent<ContainerCabinetType> = ({
     };
   }, [propCursor]);
 
-  const furnitureIconStyle: CSS.Properties = useMemo(() => {
-    return {
-      width: propWidth,
-      height: propHeight,
-    };
-  }, [propWidth, propHeight]);
-
   return (
-    <button className={styles.col3} onClick={onCol3Click}>
+    <button className={styles.card3} onClick={onCol3Click}>
       <div className={styles.tableCard}>
         <div className={styles.table} style={tableStyle}>
           {table}
         </div>
-        <div className={styles.furnitureWrapper}>
+        <div className={styles.col}>
           <img
             className={styles.furnitureIcon}
             alt=""
-            src={furniture}
-            style={furnitureIconStyle}
+            src="/furniture2@2x.png"
           />
         </div>
       </div>

@@ -32,29 +32,29 @@
   font-weight: 100;
   color: var(--color-black);
   text-align: center;
-  cursor: grab;
 }
 .table:hover {
   font-weight: 700;
+  cursor: grab;
 }
 .furnitureIcon {
   position: relative;
-  width: 171px;
-  height: 242px;
+  width: 268px;
+  height: 268px;
   object-fit: cover;
 }
 .furnitureIcon:hover {
   animation: 3s ease 0s infinite normal none shake-horizontal;
   opacity: 1;
 }
-.furnitureWrapper {
+.col {
   width: 277.5px;
   height: 270px;
   padding: var(--padding-3xs);
   box-sizing: border-box;
 }
-.col3,
-.furnitureWrapper,
+.card3,
+.col,
 .tableCard {
   display: flex;
   flex-direction: column;
@@ -70,18 +70,18 @@
   box-sizing: border-box;
   gap: var(--gap-21xl);
 }
-.col3 {
+.card3 {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
   flex: 1;
 }
-.col3:hover {
+.card3:hover {
   cursor: grab;
 }
 @media screen and (max-width: 600px) {
-  .col3 {
+  .card3 {
     flex: unset;
     align-self: stretch;
   }
