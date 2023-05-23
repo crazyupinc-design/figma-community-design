@@ -1,18 +1,16 @@
 {
   "files": {
-    "main.css": "/figma-community-design/static/css/main.8ebf107d.css",
-    "main.js": "/figma-community-design/static/js/main.505267f4.js",
-    "static/js/787.ebc416a8.chunk.js": "/figma-community-design/static/js/787.ebc416a8.chunk.js",
-    "static/media/header@3x.png": "/figma-community-design/static/media/header@3x.f7e8ecfa0eddb063d8d7.png",
-    "static/media/banner@3x.png": "/figma-community-design/static/media/banner@3x.1511668f0303ec931b01.png",
-    "static/media/contentsection@3x.png": "/figma-community-design/static/media/contentsection@3x.e52b9b9d0e49ea0330f5.png",
+    "main.css": "/figma-community-design/static/css/main.e1501e6b.css",
+    "main.js": "/figma-community-design/static/js/main.a623f7ec.js",
+    "static/js/787.3e011e42.chunk.js": "/figma-community-design/static/js/787.3e011e42.chunk.js",
+    "static/media/mainpage@3x.png": "/figma-community-design/static/media/mainpage@3x.6e394593daa8a6c80db7.png",
     "index.html": "/figma-community-design/index.html",
-    "main.8ebf107d.css.map": "/figma-community-design/static/css/main.8ebf107d.css.map",
-    "main.505267f4.js.map": "/figma-community-design/static/js/main.505267f4.js.map",
-    "787.ebc416a8.chunk.js.map": "/figma-community-design/static/js/787.ebc416a8.chunk.js.map"
+    "main.e1501e6b.css.map": "/figma-community-design/static/css/main.e1501e6b.css.map",
+    "main.a623f7ec.js.map": "/figma-community-design/static/js/main.a623f7ec.js.map",
+    "787.3e011e42.chunk.js.map": "/figma-community-design/static/js/787.3e011e42.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ebf107d.css",
-    "static/js/main.505267f4.js"
+    "static/css/main.e1501e6b.css",
+    "static/js/main.a623f7ec.js"
   ]
 }
