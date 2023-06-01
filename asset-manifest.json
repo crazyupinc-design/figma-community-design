@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/figma-community-design/static/css/main.e1501e6b.css",
-    "main.js": "/figma-community-design/static/js/main.a623f7ec.js",
-    "static/js/787.3e011e42.chunk.js": "/figma-community-design/static/js/787.3e011e42.chunk.js",
-    "static/media/mainpage@3x.png": "/figma-community-design/static/media/mainpage@3x.6e394593daa8a6c80db7.png",
+    "main.css": "/figma-community-design/static/css/main.a194181b.css",
+    "main.js": "/figma-community-design/static/js/main.41e6be92.js",
+    "static/js/787.7d27ff54.chunk.js": "/figma-community-design/static/js/787.7d27ff54.chunk.js",
+    "static/media/eventdetail@3x.png": "/figma-community-design/static/media/eventdetail@3x.68c11b000438866cba34.png",
+    "static/media/eventexhibitionexperience@3x.png": "/figma-community-design/static/media/eventexhibitionexperience@3x.269761c81b659339e6bf.png",
+    "static/media/eventfestival@3x.png": "/figma-community-design/static/media/eventfestival@3x.2fd5ef32241a19b4bdd7.png",
+    "static/media/eventconcert@3x.png": "/figma-community-design/static/media/eventconcert@3x.5fbe1fc4367f7e31f8a9.png",
+    "static/media/image14@3x.png": "/figma-community-design/static/media/image14@3x.2c83ddf3e6a3ad1d2fdb.png",
     "index.html": "/figma-community-design/index.html",
-    "main.e1501e6b.css.map": "/figma-community-design/static/css/main.e1501e6b.css.map",
-    "main.a623f7ec.js.map": "/figma-community-design/static/js/main.a623f7ec.js.map",
-    "787.3e011e42.chunk.js.map": "/figma-community-design/static/js/787.3e011e42.chunk.js.map"
+    "main.a194181b.css.map": "/figma-community-design/static/css/main.a194181b.css.map",
+    "main.41e6be92.js.map": "/figma-community-design/static/js/main.41e6be92.js.map",
+    "787.7d27ff54.chunk.js.map": "/figma-community-design/static/js/787.7d27ff54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1501e6b.css",
-    "static/js/main.a623f7ec.js"
+    "static/css/main.a194181b.css",
+    "static/js/main.41e6be92.js"
   ]
 }
